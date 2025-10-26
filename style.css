@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(201, 125, 49);
+    margin-top: auto;
+    font-family:  Helvetica;
+}
+h1{
+    font-size: 48px;
+    margin: 20px;
+
+}
+#container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+#image{
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: bisque;
+    flex: 1;
+    height: 150px;
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 8px; 
+    padding: 10px; 
+    margin: 10px;
+}
+#cart-details{
+    flex: 1;
+    width: 250px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: -20px;
+}
+#item{
+    padding: 10px;
+    margin: 10px;
+}
+#price{
+    padding: 10px;
+    margin: 10px;
+}
+#quantity{
+    padding: 10px;
+    margin: 10px;
+}
+
+#checkout{
+    border: 1px solid rgb(23, 6, 6);
+    background-color: rgb(241, 183, 107);
+    margin-top: 48px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    align-items: center;
+}
+#addToList{
+    border: 1px solid rgb(23, 6, 6);
+    background-color: bisque;
+    margin-top: 16px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    align-items: center;
+}
+#orderDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.divItems{
+    flex: 1
+}
