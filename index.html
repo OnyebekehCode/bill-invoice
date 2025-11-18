@@ -10,30 +10,31 @@
     <main>
         <h1>Bill</h1>
         <div id="container">
-        <div id="image">
 
-        </div>
-        <div id="cart-details">
+
+        
+        <div id="cart-details" class="first-item">
         <div id="preview">
             <h3>Preview</h3>
         <ol id="preview-list">
-            <li id="previewSN"> <span id="preview-quantity">1</span> <span id="preview-item">casamigos</span> <span id="preview-price">120,000</span> </li>
         </ol>
-
-
-        </div id = "orderDetails" >
-        <div class="divItems">
-        <input type="text" name="item" id="item" class="input-class" placeholder="item">
-        <input type="text" name="price" id="price" class="input-class" placeholder="price">
-        <input type="number" name="quantity" id="quantity" placeholder="quantity">
         </div>
+        </div>
+
+        <div id = "orderDetails" class = "first-item" >
         <div class="divItems">
-        <button id="addToList"> Add to list</button>
+        <div id="input-details">
+        <div id="image"></div>
+        <select type="text" name="item" id="item" class="input-class" placeholder="item"></select>
+        <select type="number" name="price" id="price" class="input-class" placeholder="price"></select>
+        <input type="number" name="quantity" id="quantity" class="input-class" placeholder="quantity">
+        </div>
+        <div id="buttons">
+        <button id="addToList" type="submit" onclick=addList()> Add to list</button>
         <button id="checkout"> Print</button>
         </div>
         </div>
-        
-        <div>
+        </div>
         </div>
         </div>
     </main>
