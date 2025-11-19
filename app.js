@@ -21,33 +21,39 @@ const inventory = [
      price: "5,000",
     },
 ]
-
-
-
-    const listItems = () => {
-
-     for (el of inventory){
-    const options = document.createElement("option")
-    console.log(el)
-    options.textContent = el.name
-    item.appendChild(options)
-    item.value = options.textContent
-    console.log(item.value)
-    checkPrice()
-    }
-
-    }
-    
-    
-    const checkPrice = ()=>{
+   const checkPrice = ()=>{
      for (el of inventory){
     const option = document.createElement("option")
     option.textContent = el.price
     price.appendChild(option)
-    price.value = option.textContent
+    return price.value = option.textContent
      }
 
     }
+    const selectItem = ()=>{
+     for (el of inventory){
+    const options = document.createElement("option")
+    options.textContent = el.name
+    item.appendChild(options)
+    return item.value = options.textContent
+    }
+    }
+
+    const matchItemAndPrice = ()=>{
+        selected = item.value.selectedElement.value
+        console.log(selected)
+    }
+
+
+    const listItems = () => {
+    selectItem()
+    checkPrice()
+    matchItemAndPrice()
+    }
+
+    
+    
+ 
 
 const addList = () => {
     const list = document.createElement("li")
